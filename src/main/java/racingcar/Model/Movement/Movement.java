@@ -1,10 +1,12 @@
 package racingcar.Model.Movement;
 
+import racingcar.Util.Constant;
+
 public enum Movement {
     STOP, GO;
 
     public static Movement move(int pickedNumber) {
-        if (pickedNumber >= 4){
+        if (pickedNumber >= Constant.BASELINE){
             return GO;
         }
 

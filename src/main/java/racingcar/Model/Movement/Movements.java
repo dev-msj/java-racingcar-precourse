@@ -1,10 +1,12 @@
 package racingcar.Model.Movement;
 
+import racingcar.Util.Constant;
+
 import java.util.List;
 
 public class Movements {
     private final List<Movement> movementList;
-    private int goAmount = 0;
+    private int goAmount = Constant.INITIALAMOUNT;
 
     public Movements(List<Movement> movementList) {
         this.movementList = movementList;
