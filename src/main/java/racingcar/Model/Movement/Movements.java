@@ -1,12 +1,12 @@
-package racingcar.Model;
+package racingcar.Model.Movement;
 
 import java.util.List;
 
-public class MovementList {
+public class Movements {
     private final List<Movement> movementList;
     private int goAmount = 0;
 
-    public MovementList(List<Movement> movementList) {
+    public Movements(List<Movement> movementList) {
         this.movementList = movementList;
     }
 

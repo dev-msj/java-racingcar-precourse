@@ -1,4 +1,4 @@
-package racingcar.Model;
+package racingcar.Model.Movement;
 
 public enum Movement {
     STOP, GO;

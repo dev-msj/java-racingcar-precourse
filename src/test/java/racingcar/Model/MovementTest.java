@@ -2,6 +2,8 @@ package racingcar.Model;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import racingcar.Model.Movement.Movement;
+import racingcar.Model.Movement.Movements;
 
 import java.util.Arrays;
 
@@ -20,9 +22,9 @@ public class MovementTest {
     @Test
     @DisplayName("총 이동 횟수 반환")
     public void testCarMap() {
-        MovementList movementList = new MovementList(Arrays.asList(Movement.GO, Movement.STOP, Movement.GO));
-        assertThat(movementList.countNumberOfGo()).isEqualTo(2);
-        movementList = new MovementList(Arrays.asList(Movement.STOP, Movement.STOP, Movement.STOP));
-        assertThat(movementList.countNumberOfGo()).isEqualTo(0);
+        Movements movements = new Movements(Arrays.asList(Movement.GO, Movement.STOP, Movement.GO));
+        assertThat(movements.countNumberOfGo()).isEqualTo(2);
+        movements = new Movements(Arrays.asList(Movement.STOP, Movement.STOP, Movement.STOP));
+        assertThat(movements.countNumberOfGo()).isEqualTo(0);
     }
 }
