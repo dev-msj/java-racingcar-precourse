@@ -1,4 +1,4 @@
-package racingcar.Model.Movement;
+package racingcar.Model.Racing.Movement;
 
 import racingcar.Util.Constant;
 
@@ -26,5 +26,18 @@ public class Movements {
         if (movement.isGo(movement)) {
             this.goAmount++;
         }
+    }
+
+    public Movements sliceMovements(int fromIndex, int toIndex) {
+        return new Movements(this.movementList.subList(fromIndex, toIndex));
+    }
+
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Movement movement : this.movementList) {
+            stringBuilder.append(movement.isGo(movement) ? "-" : "");
+        }
+
+        return stringBuilder.toString();
     }
 }

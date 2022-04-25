@@ -1,4 +1,4 @@
-package racingcar.Model.Movement;
+package racingcar.Model.Racing.Movement;
 
 import racingcar.Util.Constant;
 

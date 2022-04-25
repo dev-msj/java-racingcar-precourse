@@ -2,8 +2,8 @@ package racingcar.Model;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import racingcar.Model.Movement.Movement;
-import racingcar.Model.Movement.Movements;
+import racingcar.Model.Racing.Movement.Movement;
+import racingcar.Model.Racing.Movement.Movements;
 
 import java.util.Arrays;
 
