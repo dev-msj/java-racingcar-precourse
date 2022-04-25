@@ -21,7 +21,7 @@
 4. Racing
    * 입력 횟수만큼 각 자동차 이동
    * 가장 많이 이동한 자동차의 이름 반환
-5. MovementView
+5. MovementViewer
    * 회차별 이동 결과 표시
-6. WinnerView
+6. WinnerViewer
    * 최종 우승자 표시
